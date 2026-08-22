@@ -9,49 +9,43 @@
     <!--Esse "link", "alink", "vlink", são as cores do link sem ser clicado, durante o click e após click-->
     <body bgcolor="#191970" text="white" link="white" alink="purple" vlink="white">
         <center> 
-            <marquee behavior ="" scrollamount="9">
+           
             <!--"h1" - tamanho da fonte / "b" - negrito / "u" - underline-->
-            <h1><b>CADASTRO DE CLIENTES</h1>
-            </marquee>    
+            <h1><b>CADASTRO PARA ATENDIMENTO</h1>
+               
             <!-- Esse marquee é pra fazer aquela animação de letras ou imagens mechendo de um lado pro outro-->
         </center>
         <form>
             <p>
                 <fieldset>
                     <legend>Dados Pessoais:</legend>
-                    <label>Nome do Cliente: </label><br>
+                    <label>E-mail: </label><br>
                     <!-- "Input ='text'" - o tipo de entrada que vamos receber / "placeholder" - assim que o cliente digitar, irá substituir 
                      o que está ai / "size" - obviamente o tamanho do texto / "maxlength" - é o número máximo de caracteres que pode ser 
                      digitado / "requires = 'yes' - irá escrever "preencha este campo"-->
-                    <input type="text" placeholder="Insira seu Nome" size="60" maxlength="60" required = "yes">
+                    <input type="email" placeholder="Insira seu E-mail" size="60" maxlength="60" required = "yes">
                     <p>
                         <label>Senha:</label><br>
                         <!-- O tipo "password" faz com que a senha seja digitada já oculta e em formato de senha"-->
-                        <input type="password" size="20" maxlength = "20"> 
+                        <input type="password" placeholder="Digite aqui sua senha" size="20" maxlength = "20"> 
                     <p>
                         <!-- Esse tipo "date" já formata o botão automaticamente para o formato de data-->
                         <label>Selecione sua data de nascimento:</label><br>
                         <input type="date" value="dd-mm-yyyy">
-                    <p>
-                        <!-- Esse tipo "number" já formata o botão automaticamente para o formato de seleção numérica -->
-                        <label>Selecione sua idade:</label><br>
-                        <input type="number" min ="1" max="100"><br>
-                        <label>Selecione quanto de R$ você tem atualmente</label>
-                        <input type="number" min="0" max="1000000"><br>
-                    <p>
-                        <label>Selecione cursos de sua preferência:</label><br>
+                
+                        <label>Selecione o curso que você faz</label><br>
                         <!-- Aqui são listas - "ol" são listas organizadas por numeração crescente / "ul" é uma lista só com pontinhos, 
                         'sem organização'-->
                         <ul>
-                            <li><input type="checkbox" name="cursos"> HTML </li>
-                            <li><input type="checkbox" name="cursos"> CSS </li>
-                            <li><input type="checkbox" name="cursos"> JAVA </li>
-                            <li><input type="checkbox" name="cursos"> JAVASCRIPT </li>
-                            <li><input type="checkbox" name="cursos"> PHP </li>
-                            <li><input type="checkbox" name="cursos"> PYTHON </li>
+                            <li><input type="radio" name="cursos"> DSM </li>
+                            <li><input type="radio" name="cursos"> INFORM. PARA NEGÓCIOS </li>
+                            <li><input type="radio" name="cursos"> LOGISTICA </li>
+                            <li><input type="radio" name="cursos"> ADS </li>
+                            <li><input type="radio" name="cursos"> POLIMEROS </li>
+                            
                         </ul>
                     <p>
-                        <label>Selecione uma cidade:</label><br>
+                        <label>Selecione a cidade da unidade:</label><br>
                         <!-- Esse "select" seguidos com os "options" cria uma caixa de opções a selecionar-->
                         <select>
                             <option>Santo André</option>
@@ -61,7 +55,7 @@
                             <option>Guarulhos</option>
                         </select>
                     <p>
-                        <label>Observações gerais:</label><br>
+                        <label>Digite aqui o que deseja:</label><br>
                         <!--Esse "textarea" serve para colocar um bloco de texto com diversas linhas seguidas - Geralmente usadao para 
                         observações e coisas assim. / 'cols' é a porcentagem da tela que essa caixa vai cobrir / 'rows' é o tanto de 
                         linhas que terá na nossa caixa/'placeholder' é aquele
